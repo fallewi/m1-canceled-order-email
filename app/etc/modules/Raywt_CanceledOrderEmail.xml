@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Raywt_CanceledOrderEmail>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Raywt_CanceledOrderEmail>
+    </modules>
+</config>

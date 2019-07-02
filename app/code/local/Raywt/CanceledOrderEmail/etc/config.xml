@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Raywt_CanceledOrderEmail>
+            <version>0.0.1</version>
+        </Raywt_CanceledOrderEmail>
+    </modules>
+    <global>
+        <models>
+            <raywt_canceledorderemail>
+                <class>Raywt_CanceledOrderEmail_Model</class>
+            </raywt_canceledorderemail>
+        </models>
+        <helpers>
+            <raywt_canceledorderemail>
+                <class>Raywt_CanceledOrderEmail_Helper</class>
+            </raywt_canceledorderemail>
+        </helpers>
+        <events>
+            <order_cancel_after>
+                <observers>
+                    <raywt_canceledorderemail>
+                        <type>model</type>
+                        <class>raywt_canceledorderemail/observer</class>
+                        <method>sendEmail</method>
+                    </raywt_canceledorderemail>
+                </observers>
+            </order_cancel_after>
+        </events>
+    </global>
+</config>

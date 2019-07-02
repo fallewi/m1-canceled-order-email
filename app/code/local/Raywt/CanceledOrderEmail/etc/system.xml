@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <canceled_orders>
+            <tab>sales</tab>
+            <label>Canceled Orders (Email)</label>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <sort_order>1000</sort_order>
+            <groups>
+                <settings>
+                    <label>Settings</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <sort_order>10</sort_order>
+                    <fields>
+                        <enabled>
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>raywt_canceledorderemail/system_config_source_settings_enabled</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <sort_order>10</sort_order>
+                        </enabled>
+                        <email_template>
+                            <label>Email Template ID</label>
+                            <comment>ID of email template to send for Canceled Order Emails</comment>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <sort_order>20</sort_order>
+                        </email_template>
+                    </fields>
+                </settings>
+            </groups>
+        </canceled_orders>
+    </sections>
+</config>
